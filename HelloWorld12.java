@@ -13,15 +13,20 @@ public class HelloWorld12 {
 //			System.out.println(key);	
 //		}
 //		
-		boolean a = true;
+//		boolean a = true;
+//		
+//		if (a) {
+//			System.out.println("hello");
+//		}
+//		else {
+//			System.out.println("world");
+//		}
+//
+//		pack.Student std = new pack.Student();
+//		
+//		pack.Student.display();
+//		std.display();
 		
-		if (a) {
-			System.out.println("hello");
-		}
-		else {
-			System.out.println("world");
-		}
-
 	}
 
 }
