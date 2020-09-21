@@ -1,0 +1,613 @@
+*****THESE ARE MY PERSONAL NOTES => NOT A OFFICIAL DOCUMENT***
+
+
+
+Complexities while developing a software:
+	1)Communication Gap between user and developer(Req-Analysis) :Soln => flowcharts and algo
+	
+	2)Changing Requirements: 
+	
+	3)Team Management: (Modular communication)
+	
+	4)user Interface:
+	
+Disadvantages of procedural Languages
+	1)Global data:
+	
+	2)Data and function binding:
+	
+	3)Difficulty in Debugging:
+	
+	4)Complex map-realtime Requirement:
+	
+Why OOP ? (intro of OOP) 
+	1)Object is nothing but any realtime entity with well defiend structure and behavior
+		1)tagible 2)intangible 3)conceptual
+		
+		Object has 4 characteristics :
+			1)state : current values assigned to the properties: 
+			2)behavior : Reaction of object, when state is changed: (Behavior causes responsibility)
+			3)identity : differentiate one object from the another.
+			4)responsibility : Role performed by an Object.
+	
+	Object 	attributes	behavior	state	Identity
+	car 	wheels		motion		moving 	front-right
+			engine		running		started	v8 Engine
+			colour		visibility	present	colour-chart/Hex number
+				
+	marker  shape		writing 	working				
+			price
+	
+	2)Four pillers of OOP:
+	  Major pillors:
+		1)Abstraction:Ignoring the unnessesory properties and cosidering only the required properties:
+			Real-Time Example: 1)mobile device specifications-
+								2)employee medical details-
+								3)student physical apperance-
+								4)movie seats-
+								
+								 
+		
+		2)Encapsulation:access to the data via a methods: Hiding the data: access specifiers:Interface 			will remain the same, hiding the working.
+			Real-Time Example: 1)Electric Socket
+								2)admin Control on site
+								3)access to account in bank
+								4)A/C 
+								5)Bag
+		
+		3)Inheritance: Reusability and extensibility.: Generalisation to specialisation : is kind of  				realtionship
+		    {use: Creating polymorphic behavior:}
+		    Real-Time Example: 1)classification: vechical => cycle, car 
+		    					2)fruit => sweet,sour
+		    					3) person => employee,client
+		    					4)	
+		    
+		4)Polymorphisom: same message given to diffent objects will behave diffenently.
+			Real-Time Example: 1)person able to walk and run.
+								2)employee able to teach and code
+								3)
+			
+		5)Modularity: Behavior OF object.
+	  
+	  [Only support 1 and 2 VB and ADA is OBJECT BASED Languages]
+	  
+	  Minor Pillers
+	  	1)Strong type casting: Conversion of one type to another type:
+	  	2)Concurrency: Multi Threading:
+	  	3)Presistancy: Storing a Data. JDBC and FILE I/O:
+	  	
+	  Containment:
+	  	ONE OBJECT CONTAINING ANOHTER OBJECT. it is "Has a " kind of relationship.	
+	  		is a part of a object 
+	  		[inheriaance is type of object]	
+Homework:  						
+	Draw Object model for types of inventment plan in india categorise them eg: insurance
+	Draw a class diagram for Hospital Management System.
+
+CORE JAVA:
+		4th Gen language:
+		James Gosling..!! Father of Java, Developed by Sun Microsystem.	
+		
+	Featues of Java:
+		simple:
+		portable:
+		Robust: [Dangling pointers and memory lekages]
+		Platform independant:(Architectural Neutral)
+		Multithreaded:
+		Distributed: java.net
+		Interpreated:
+		Secure:
+		JVM: Class loader , bytecode verifier, Security manager , Just in time compilation.
+			
+java Execution:
+		.java file => compiler => .class => JDK lib => class loader => bytecode verifier => security  manager => JVM -> Interpreter -> JIT (Just in time compilation)
+		
+		JDK: JRE+ JVM + Development tools
+		JRE: JVM + Only for execution
+		JVM: JAVA VIRTUAL MACHINE. Interpreter + JIT => Runtime instance/Concrete Implementation
+																		abstract Specification		
+		JIT: Just in time compilation
+		 
+		 
+									class loader
+										||
+					method area		Heap	Stack 		PC Register
+					
+							Execution-Engine	JNI(Native Interfaces)								 	
+					
+								**JAVA VIRTUAL MACHINE**
+		
+
+TYPES OF APPLICATION CAN BE MADE:
+
+1)J2SE => console/UI -> desktop
+
+2)J2EE => Enterprise application [webapplication + more]								
+
+3)J2ME => Android
+
+4)DATA CENTRIC APPLICATION: Database is invloved.
+		-> Web Services
+		->
+		
+		
+		
+OPERATORS IN JAVA
+	Arithmatic 
+	Unary
+	Logical: !
+	Relational : <>
+	Bitwise : >>> >> << & |  ^ ~ 
+	assignment
+	?:
+	instance of 		
+	
+	
+	
+	post , prefix-unary, Multi div , addn sub , shift operators , Relational operators, and xor or
+	
+	ternary opearator, Assignment opearator
+	
+	
+	
+	unary operators are Right to left 
+	Assignment operators Right to left
+	Conditional operators
+	
+	rest all is "left to right"
+	
+	
+	
+Keywords:
+	int 
+	double 
+	float
+	long
+	byte
+	break 
+	continue
+	char
+	class
+	public 
+	private
+	protected
+
+
+
+Conditional Statement:
+	Iterative
+	Conditional
+	Selection Statement
+	
+	labeled break and continue
+	
+
+Strictfp
+JVM 
+RMI
+applets
+
+	
+	
+	
+JVM Memory Management:
+	Heap Memory of JVM:
+		1)nursary memory : Edan(new object creation) and s0 (Survivor) and s1 => Minor GC
+		
+		2)old memory : permanat generation and old memory => Major GC 
+		
+Garbage Collector:		
+		
+		Bean b1 = new Bean();
+		Bean b2 = new Bean();
+		Bean b3 = b1
+		b2= b3
+		
+		
+Finalize() method executes before Garbage collection.
+
+
+Run Garbage collecter
+
+	getruntime.gc()
+	system.gc()	
+		
+1)Mark: mark live objects.
+
+2)Sweep: remove Dead Objects
+
+3)Compact: Compaction in Memory
+
+
+Types: 
+		1)Serial GC
+		2)Parallel GC
+		3)Parallel old GC
+		4)Concurrent Mark and sweap GC;
+		5)G1	
+			Reference : http://www.dietergalea.com/images/parallel_sequential_concurrent.jpg
+			
+			
+		Creating ref in heap using user defined array [Array of Objects] 
+		
+		When Swapping an Object Refernce is stored in stack, but Object is stored in Heap
+			   										=> Array's storing refernces to object
+	
+[IMPORTANT::Always the reference is stored in Stack but the actual array is in the Heap]	
+	
+		if NO user defined constructors 
+			=> JVM will provide default counstructor implecitly
+			
+		if any one user defined constructor then
+			=> user need to write a default constructor
+		
+
+
+Types of variables in java			
+	
+		Instance variables (data members) => OBJECTS :heap, seperate for each object, runtime
+		
+		Class variables => PER CLASS one copy: static, stored in permanant section / data memory  
+		
+		Local variable	=> stored at stack.
+		
+		
+	REF:https://www.tutorialspoint.com/What-are-class-variables-instance-variables-and-local-variables-in-Java	
+		
+Static: (Belongs with class hence class member)
+		Static methods can access only static data; (does not send this.)
+		
+		Instance method(NON-Static methods) can access static members =>(sends this. as hidden parameter)
+					
+	non-static block : gets executed for every object before constructor
+	
+	
+	
+	
+					
+PACKAGE: collection of classes and interfaces
+
+	1)first line of a file, single statement
+	
+	2)subpackages:
+		package mypack.subpack
+					
+					
+	=> Either import class from a package or give fully Qualified name for access
+	
+			eg: mypack.master br = new mypack.master();				
+					
+					
+.BAT file commands for java execution					
+					
+F:X> javac -d f:/     d:/MyBean.java		=>destination
+
+F:> javac -classpath f:/;e:/ TestBean.java    =>searching .class file
+			
+			
+			
+Static Import: can import static member of a class			
+			
+			
+			
+			
+			
+			
+			
+Composition and Aggregation:
+				Aggregation	:weak association or weak , objects are seperate
+					
+				Composition	:physical and strong assocication , dependancy	
+				
+				
+				
+				
+static int sum (int ... numbers)
+{
+   int total = 0;
+   for (int i = 0; i < numbers.length; i++)
+        total += numbers [i];
+   return total;
+}
+sum (20,60,1,1,4);
+sum (6,5,4);
+
+
+ellipsis operator in java						
+
+
+
+inheritance is a 
+containment has a 
+
+Association: 	
+			composition and aggregation
+			physical 			logical
+			strong 				weak -bonding
+			books-library		mobile-sim
+			
+			
+			
+super class
+constructor calling super class constructor;	
+
+
+
+access specifiers:
+default: accessable in package
+public: outside package as well;
+
+
+binding attachment of methods and objects
+
+		static binding -> compile time binding -> early binding
+		Employee e1 = new Employee();
+		e1.disp();
+		
+		Employee e12 = new ChildClass();	
+		e12.disp();
+		
+		
+		
+	AT LEAST ONE abstract mehthod present in the class make that class abstract
+	VICE VERSA not true=> not nessesary that abstract class to have abstract method		
+	
+	abstract methods do not have a body
+	
+	
+	overloading return type no matter 
+	overriding return type matters
+	
+	"static polymorphism"
+	in java every class is inherited class
+	ever class in java is polymorphic class
+		
+	CO-VARIENT RETURN TYPE uses
+							=> super class method hello(); return type is Super class
+							=> subclass calling superclass method with return type subclass	
+							
+							
+							
+	
+	implecit and explicit type casting :
+						dynamic ploymorphisom is implecit conversion
+						
+						explicit type casting 
+								=> from bottleneck to body conversion
+								
+			
+		private methods are bydefault final									
+		static methods are not over ridden => called data hiding **
+		final classes can not be inherited reverse is abstract
+		
+		
+		
+	Object class
+	=> toString() => used to Stringify the objects. ->returns String
+		==>>> like magic methods in python to override to string and make display according to objecr  		==>> used to print objects by using only object name
+		==>Prefer overriding String than seperate display method		
+		
+		
+	=> hashcode => considered a integer representaion of object
+				
+	=> equals()
+			=> mandatory to implement if comparing objects
+	
+		public boolean equals(Object obj){ //upcasting  //can use co-varient return type and use DateBean
+			 
+			DateBean t =  (DateBean) obj;  //Downcasting
+			if(this.day==t.day);
+		
+		}			
+		
+		
+
+
+
+	Interfaces:
+	public and abstract methods
+	public static final -> data members
+	
+			-> because it is interface specific data
+	
+	
+	abstract class vs interfaces
+	
+	
+	interfaces can EXTEND another interfaces. n number of interfacess
+	class can implements interfaces
+	class extends class.				
+	
+	
+	if 2 interfaces have same methods then:
+				1)make refereance of interface and access it
+				2)make different packagess
+				
+				
+		listeners are interfaces
+		*what is adapter class? 
+		
+		
+	Marker Interface: empty interface
+						tagging interfaces
+						 	cloneable/Serialisable
+						 	
+						 	
+	Cloneable:
+		 method to make a field-for-field copy of instances of that class.
+		 
+		 its a deep copy in jdk 1.8 
+		 and shallow copy in jdk 1.7(below)
+		 
+		 
+		 containment and inheritance use of clonable**
+		 					 		
+		 					 		
+Inner Classes:   
+					[to be studied in Details******]
+
+				Regular inner classes / simple
+				static / nested inner classes
+				Method local Inner Classes
+				**Anonymous inner classes** ???
+				
+				without implementing a interface overriding methods in that interface;
+				
+			Myinterface in = new Myinterface() {   //here new is creating object of anonymus class not the INterface object
+				
+				//override the methods
+				};
+				
+				
+				 		 					 			 					 				
+				 		 					 			 					 				
+
+
+Ways to create a String:
+		1)String  //interview questions****####
+			it represents immutable objects
+			
+			String s2="abc";
+			String s4="abc";
+			s2 and s4 have same hashcode
+			
+			//all stored in string pool
+			
+			String s1 = new String("h1");
+						initially goes it in a string pool then from there to heap
+						 		 					 			 					 						2)String Buffer
+				is thread safe;
+				is syncronised		 		 					 			 					 						
+						 		 					 			 					 						3)String Builder:
+				is not thread safe
+				 is not syncronised					 			 					 						
+			
+
+Enum
+
+public static final 
+
+
+jvm can only construct the object of Enum 
+because by default constructors are private
+
+
+
+
+Wrapper Classes
+
+
+: are final classes -> inner methods will be final as well
+: Collection classes only work with objects;;
+
+			Auto boxing; 
+			 int x = 10;
+			 Integer i1 = x ;   <- autoboxing concept
+			 
+			 
+			 conversion of pimitive to Wrapper class 
+			 
+			int y = Integer.parseInt("10");   <- AutoUnboxing
+			
+			
+			implecit type casting is only for premitive data types NOT for wrapper classes			
+			
+{Range of Data Typesss} 
+			 
+			 
+			 
+			 
+Exception handling:
+	logical error;
+	prediction and resolving of errors 
+	Runtime Errors -> exception ->Unchecked Exception -> Runtime Exception -> programmers Error
+									checked Exception -> IO Exception ->System Errors -> compusary
+
+	
+	[Howw to use debugger]			 
+	
+	
+	
+	
+											Throwable
+							exception							Error
+				Runtime Exception	 IO Exception						
+	
+				unchecked				checked
+	
+	
+	
+	e.getMessage()
+	e.printStackTrace();
+	
+	
+	try
+	catch --> (is optional)
+	finally	
+	
+ARM-> automatic resource management       -> try(open file here){
+												}
+		autocloseable interface
+			closeable interface -> io package
+			
+#Multi catch 
+#final rethrow   -> child ref = super class object  ==> without typecasting.
+#sending exception to caller  # unless not handled error use throws 
+
+
+#nested try catch -> executes inner most first				
+
+
+#annotation and Reflection 
+
+##Reflection provide metadata of class at Runtime
+	
+		Employee e = new Employee();
+		Class c1 = e.getClass();
+		
+		Method[] m = c1.getMethod();
+					c1.DeclaredMethod();
+		
+		Class c2 = Class.forName("Myclass");    .newInstance();
+		
+		Employee ee = (Employee) class.forName("Employee").newInstance();
+		
+
+
+
+## Annotations: developers compiler or JVM 		
+
+		create 	
+		apply
+		retrive of annotations
+	@Documented
+	@Inherited
+	@Overriden
+	@SupperessWarnning
+	@Depricated
+	@Rentention
+	@Target	
+	
+	
+	
+Pre Generic and Generic Classes in java
+? is wide card character in java..!!  -> for methods onlys
+
+
+					parameterised classes - > generic classes
+					
+					https://2.bp.blogspot.com/-cBZLWF5f0ME/W6xLaULCDNI/AAAAAAAABs8/1tlAE50A0r4DR6JOGStLH49uSeycfYxcwCLcBGAs/s1600/Collection-Interface.png	
+					
+					
+					****internal working of collections 
+					
+					
+				diff betn collection and collections
+				
+	comparable and comparator
+	
+	
+	
+#must implement hashcode and equals method -> when using userdefiend datatypes inside Collection
+
+					

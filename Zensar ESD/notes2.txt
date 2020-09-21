@@ -1,0 +1,58 @@
+Properties Class
+	-String objects;
+	-cant make them generic
+	
+	
+	
+	
+Stream => flow of byte stream	
+
+
+
+Two types of files
+		text and binary	
+				 inputstream and outputstream
+				 		classes suffix with inputstream				
+		-reader and writer			
+		-for character data
+		
+		
+	filterinputstream
+	filteroutputstream
+	Bufferedinputstream
+	
+File
+|	
+BufferInputStream
+|	
+DataInputStream alternative for scanner					
+|
+-> called Chaining / layering [System.in.read() => single character read]	
+
+
+
+Serialisable 
+	in case of inheritance
+				containmanet
+				
+		-> static does not get serialised		
+
+
+
+
+file output stream
+object output stream
+
+
+externalisable interface 
+
+
+
+
+
+Multithreading
+
+thread class:
+		extends thread
+		implement run
+		create object and call start
